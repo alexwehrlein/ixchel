@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+      .card-img{
+        margin-top: 6px;
+      }
+      .card-title{
+        margin-top: 6px;
+      }
+      .footer {
+        background-color:beige;
+        color : darkgoldenrod;
+   width: 100%;
+   text-align: center;
+}
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .tab {
+position: relative;
+margin-bottom: 1px;
+width: 100%;
+color: #fff;
+overflow: hidden;
+}
+input{
+position: absolute;
+opacity: 0;
+z-index: -1;
+}
+label {
+position: relative;
+display: block;
+padding: 0 0 0 1em;
+background: darksalmon;
+font-weight: bold;
+line-height: 2;
+cursor: pointer;
+}
+.tab-content {
+max-height: 0;
+overflow: hidden;
+color:#000;
+-webkit-transition: max-height .35s;
+-o-transition: max-height .35s;
+transition: max-height .35s;
+}
+.tab-content p {
+margin: .5em;
+}
+/* :checked */
+input:checked ~ .tab-content {
+max-height: 14em;
+}
+/* Icon */
+label::after {
+position: absolute;
+right: 0;
+top: 0;
+display: block;
+width: 3em;
+height: 3em;
+line-height: 2;
+text-align: center;
+-webkit-transition: all .35s;
+-o-transition: all .35s;
+transition: all .35s;
+}
+      @media (max-width: 600px) {
+        h2{
+          font-size: 22px;
+        }
+        h3{
+          font-size: 20px;
+          margin-top: .5cm;
+        }
+        h4{
+          font-size: 17px;
+          margin-top: .5cm;
+        }
+        h6{
+          font-size: 15px;
+          LINE-HEIGHT:15px;
+          margin-top: .5cm;
+        }
+      }
+    </style>
+    <title>Ixchel</title>
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" height="40">
+        </a>
+      <a class="navbar-brand" href="#">Ixchel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#nosotros">Acerca de nosotros <span class="sr-only"></span></a>
+          </li>          
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" 
+            aria-haspopup="true" aria-expanded="false">Servicios</a>
+            <div class="dropdown-menu" aria-la  belledby="dropdown01">
+              <a class="dropdown-item" a href="#servicios">Masajes</a>
+              <a class="dropdown-item" a href="#servicios">Tratamientos Especiales</a>
+              <a class="dropdown-item" a href="#servicios">Faciales</a>
+              <a class="dropdown-item" a href="#servicios2">Depilacion cera e hilo</a>
+              <a class="dropdown-item" a href="#servicios2">Aparatologia</a>
+              <a class="dropdown-item" a href="#servicios2">Manos y pies</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" 
+               aria-haspopup="true" aria-expanded="false">Contactanos</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="https://www.instagram.com/ixchel.bip/">Instagram</a>
+                <a class="dropdown-item" href="https://www.facebook.com/Ixchel-Belleza-Integral-Plena-102681344452255/">Facebook</a>
+                </div>
+        </li>    
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <body>
+     <main role="main">
+        <br>
+    <br>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img class="d-block w-100" src="img/portada8.png" >
+             <div class="container">
+            </div>
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="img/portada.png " >
+              <div class="container">
+              <div class="carousel-caption text-right">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="img/portada5.png">
+              <div class="container">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+      </div>
+      </div>
+          <section id="empresa">
+              <div class="container">
+              <div class="contenido seccion">
+                  <div class="container">
+                      <a name="nosotros"></a>
+                     <br> <h2>Acerca de nosotros</h2>
+                     <h3 class="lead">Apapachos del Alma ofrece una gama completa de servicios y tratamientos
+                            de SPA para que pueda rejuvenecer sus sentidos.</h3>
+                  </div>
+              </div>
+          </section>
+          <section>
+              <div class="container">
+                  <div class="container">
+                      <a name="servicios"></a>
+                    <h2>Servicios</h2>
+                  </div>
+                  <div class="container">
+                  <div class="row">
+                      <div class="col md-4">
+                          <img class="card-img" src="img/Masaje.jpg" class="img-fluid" alt width="responsive image">
+                          <div class="tab">
+                                 <h4 class="card-title">Masajes</h4>
+                                 <input id="tab-1" type="checkbox" name="tabs">
+                                 <label for="tab-1">Deportivo</label>
+                                 <div class="tab-content">
+                                   <p>  Alivia espasmos musculares, acelera la recuperación por fátiga muscular eliminadno
+                                       ácido láctico.</p>
+                                   </div>
+                          </div>
+                          <div class="tab">
+                              <input id="tab-2" type="checkbox" name="tabs">
+                              <label for="tab-2">Desconfracturante</label>
+                              <div class="tab-content">
+                                <p>  Ideal para disolver las contracturas que se producen por el estrés,
+                                    las malas posturas, la falta de descanso o una vida demasiado sedentaria.</p>
+                              </div>
+                              </div>
+                              <div class="tab">
+                                  <input id="tab-3" type="checkbox" name="tabs">
+                                  <label for="tab-3">Linfatico</label>
+                                  <div class="tab-content">
+                                    <p> Ayuda a eliminar tóxinas, mejora la circulación periférica,
+                                        estimula el buen funcionamiento del sistema linfático e inmunologíco.</p>
+                                  </div>
+                          </div>
+                          <div class="tab">
+                              <input id="tab-4" type="checkbox" name="tabs">
+                              <label for="tab-4">Holistico</label>
+                              <div class="tab-content">
+                                <p>  Especial para aliviar el estrés utilizando diferentes
+                                    tecnicas de ayurveda, tibetano, sueco. Aumento el nivel de energía,
+                                    la concentración y elimina el insomnio.</p>
+                              </div>
+                            </div>
+                            <div class="tab">
+                                <input id="tab-5" type="checkbox" name="tabs">
+                                <label for="tab-5">Relajante</label>
+                                <div class="tab-content">
+                                  <p>  Orientado a quitar el estrés, ideal para disminuir dolors
+                                      de cabeza, o transtornos de ansiedad.</p>
+                                </div>
+                              </div>
+                              <div class="tab">
+                                  <input id="tab-6" type="checkbox" name="tabs">
+                                  <label for="tab-6">Masaje en pareja</label>
+                                  <div class="tab-content">
+                                    <p>  Puede ser holistico, relajanta o terapéutico que ayuda a disminuirel estrés
+                                        liberando endorfinas aumenta la sensación de bienestar permitiendo una conexión
+                                        con tu pareja.</p>
+                                  </div>
+                                </div>
+                                <div class="tab">
+                                    <input id="tab-7" type="checkbox" name="tabs">
+                                    <label for="tab-7">Masaje a 4 manos</label>
+                                    <div class="tab-content">
+                                      <p> Usted es apapachado con la manos de dos terapeutas quienes
+                                          generan efectivos movimientos para eliminar el estrés y aliviar los dolores
+                                          musculares y articulares.</p>
+                                    </div>
+                                  </div>
+                      </div>
+                      <div class="col md-4">
+                          <img class="card-img" src="img/tra.jpg" class="img-fluid" alt width="responsive image">
+                               <div class="tab">
+                                    <h4 class="card-title">Tratamientos especiales</h4>
+                                    <input id="tab-8" type="checkbox" name="tabs">
+                                    <label for="tab-8">Modelado de figura</label>
+                                    <div class="tab-content">
+                                      <p>   En un área especifica se combinan masajes,
+                                            aparatología y mesoterapia para disminuir adiposidades, flacidez,
+                                            estilizando tu figura.</p>
+                                    </div>
+                                  </div>
+                                  <div class="tab">
+                                      <input id="tab-9" type="checkbox" name="tabs">
+                                      <label for="tab-9">Nutrición post quirurgica</label>
+                                      <div class="tab-content">
+                                        <p>  Después de una intervención quirúrgica promovemos la óptima cicatrización, eliminación de edemas y prevención
+                                              de fibrosis a través de ultrasonido, corriente galvánica, radiofrecuencia y
+                                              nutrientes.</p>
+                                      </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input id="tab-10" type="checkbox" name="tabs">
+                                        <label for="tab-10">Ritual del amor</label>
+                                        <div class="tab-content">
+                                          <p>  Hidratación y renovación de la piel con vaporizaciones
+                                                en vino rosado, envolviendo tu piel en mascarilla de durazno finalizando
+                                                con un masaje relajante y esencias de rosas.</p>
+                                        </div>
+                                      </div>
+                                      <div class="tab">
+                                            <input id="tab-11" type="checkbox" name="tabs">
+                                            <label for="tab-11">Ritual de riqueza</label>
+                                            <div class="tab-content">
+                                              <p> Se hidrata, purifica y suaviza la piel de todo el cuerpo
+                                                    con una mascarilla tibia de miel de abeja y nuez, finalizando con un
+                                                    masaje relajante con crema de toronja orgánica.</p>
+                                            </div>
+                                          </div>
+                                          <div class="tab">
+                                                <input id="tab-12" type="checkbox" name="tabs">
+                                                <label for="tab-12">Ritual de apapacho con cacao</label>
+                                                <div class="tab-content">
+                                                  <p>  Se hidrata, purifica y suaviza la piel con
+                                                        un exfoliante rico en granos de café y nuez, envolviendo en una
+                                                        mascarilla de crema de chocolate y finalizando con un masaje relajante
+                                                        con aceite de cacao.</p>
+                                                </div>
+                                              </div>
+                      </div>
+                      <div class="col md-4">
+                          <img class="card-img" src="img/cara.jpg" class="img-fluid" alt width="responsive image">
+                          <div class="tab">
+                                 <h4 class="card-title">Faciales</h4>
+                                 <input id="tab-13" type="checkbox" name="tabs">
+                                 <label for="tab-13">Limpieza profunda</label>
+                                 <div class="tab-content">
+                                   <p>  Ayuda a controlar el exceso de grasa
+                                           y a humectar la piel, previene envejecimiento prematuro.</p>
+                                 </div>
+                          </div>
+                          <div class="tab">
+                              <input id="tab-14" type="checkbox" name="tabs">
+                              <label for="tab-14">Facial Rejuvencedor</label>
+                              <div class="tab-content">
+                                <p> Tonifica e hidrata la piel,
+                                      disminuye las líneas de expresión, activa la producción
+                                      de colágeno para que tu rostro luzca más joven a través
+                                      de nutrientes.</p>
+                              </div>
+                       </div>
+                         <div class="tab">
+                              <input id="tab-15" type="checkbox" name="tabs">
+                              <label for="tab-15">Facial Dermapen</label>
+                              <div class="tab-content">
+                                <p> Gracias a la bioestimulación
+                                      transdérmica se estimulan los factores de crecimiento,
+                                      colágeno y elastina consiguiendo rejuvenecer la piel del
+                                      rostro. Retira células muertas e impurezas de la piel,
+                                      disminuye las lineas de expresión.</p>
+                              </div>
+                       </div>
+                       <div class="tab">
+                              <input id="tab-16" type="checkbox" name="tabs">
+                              <label for="tab-16">Lifting Facial</label>
+                              <div class="tab-content">
+                                <p>   Utilizando la técnica de succión o cupping
+                                      se estimula la producción natural de colágeno y elastina
+                                      por lo que genera un efecto lifting inmediato, deja la piel
+                                      permeable para añadir activos tensores con resultados
+                                      sorprendentes. Ideal para lucir más joven y radiante
+                                      durante un evento.</p>
+                              </div>
+                       </div>
+                       <div class="tab">
+                              <input id="tab-17" type="checkbox" name="tabs">
+                              <label for="tab-17">Facial purificante</label>
+                              <div class="tab-content">
+                                <p>  Oxigena las células, ayuda a reducir
+                                      el acné, tonifica tu rostro, elimina impurezas, disminuye
+                                      manchas, genera uniformidad del tono de piel, con
+                                      activos de carbón y vitaminas se obtiene mayor frescura
+                                      y luminosidad del rostro.</p>
+                              </div>
+                       </div>
+                       <div class="tab">
+                              <input id="tab-18" type="checkbox" name="tabs">
+                              <label for="tab-18">Catiodermia Facial</label>
+                              <div class="tab-content">
+                                <p> Ideal para pieles con exposición
+                                      prolongada al sol, hidrata profundamente restableciendo
+                                      el balance hidro lípido de la piel, generando tonicidad y
+                                      suavidad.</p>
+                              </div>
+                       </div>
+                      </div>
+                  </div>
+                      <div class="row">
+                      <div class="col md-4">
+                          <img class="card-img" src="img/Depilacion.jpg" class="img-fluid" alt width="responsive image">
+                          <div class="tab">
+                                 <h4 class="card-title">Depilacion</h4>
+                                 <input id="tab-19">
+                                 <label for="tab-19">Cera</label>
+                                 <div class="tab-content">
+                                 </div>
+                                 <div class="tab">
+                                 <input id="tab-20">
+                                 <label for="tab-20">Hilo</label>
+                                 <div class="tab-content">
+                                </div>
+                             </div>
+
+                      </div>
+                   </div>
+                      <div class="col md-4">
+                          <img class="card-img" src="img/cavitacio.jpg" class="img-fluid" alt width="responsive image">
+                          <div class="tab">
+                               <h4 class="card-title">Aparatologia</h4>
+                               <input id="tab-21" type="checkbox" name="tabs">
+                               <label for="tab-21">Descrpción</label>
+                               <div class="tab-content">
+                                 <p>  En todos nuestros tratamientos descubre los beneficios de la tecnología
+                                         médica estética, cavitación y radiofrecuencia, ultrasonido, ionizador,
+                                         electroporador, galvánica, cupping; que nos ayudan a la eliminación de
+                                         líneas de expresión, celulitis, flacidez, estrías, fibrosis, inflamación y
+                                         reducción de grasa difícil en zonas localizadas, edemas entre otros.
+                                         .</p>
+                               </div>
+                             </div>
+
+                      </div>
+                      <div class="col md-4">
+                          <img class="card-img" src="img/pies.jpg" class="img-fluid" alt width="responsive image">
+                          <div class="tab">
+                                 <h4 class="card-title">Manos y pies</h4>
+                                 <input id="tab-22" type="checkbox" name="tabs">
+                                 <label for="tab-22">Manos de seda</label>
+                                 <div class="tab-content">
+                                   <p>  Se retiran asperezas con una rica mezcla de sales y nuez orgánica logrando
+                                         una hidratación a través de una mascarilla de parafina caliente de durazno,
+                                         sellando con un masaje suave relajante, se obtiene una piel tersa y suave.</p>
+                                 </div>
+                          </div>
+                          <div class="tab">
+                              <input id="tab-23" type="checkbox" name="tabs">
+                              <label for="tab-23">Pies de seda</label>
+                              <div class="tab-content">
+                                <p>  Se eliminan asperezas con una mezcla de sales marinas y un envolvimiento
+                                        tibio de menta se hidrata obteniendo suavidad y descanso a traves de un
+                                        masaje de reflexologia profunda.</p>
+                              </div>
+                       </div>  
+                      </div>
+                    </div>  
+                  </div> 
+
+          </section>
+ <br>
+<section id="#">
+                              <div class="container">
+                              <div class="contenido seccion">
+                            <h2>Testimonios</h2><br>
+</section><br>
+<section>
+    <div class="container">
+        <div class="contenido seccion">
+    <div class="row">
+        <div class="col 6-md-6">
+           <div class="container">
+          <div class="div-img" >
+            <img class="img" src="img/se.jpg" alt width="30"><br>
+            <div class="text"><h6>What's up?</h6></div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div>
+        <div class="col 6-md-6">
+          <div class="container">
+            <div class="div-img" >
+              <img class="img" src="img/se.jpg"  alt="Foto3"><br>
+              <div class="text"><h6>What's up?</h6></div>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div>
+      <div class="col 6-md-6">
+        <div class="container">
+          <div class="div-img" >
+            <img class="img" src="img/se.jpg"  alt="Foto3"><br>
+            <div class="text"><h6>What's up?</h6></div>
+      </div><!-- /.col-lg-4 -->
+    </div>
+</section>
+ <br> <br>
+<div class="footer">
+              <br><br>
+                <h5>Contacto</h5><div>
+                        <img class="mb-2" src="img/logo png.png" alt width="responsive image" width="90" height="90">
+                      </div>
+                        <ul class="list-unstyled text-small">
+                          <li><a class="text">Belleza Integral Plena</a></li>
+                          <li><a class="text">Instagram ixchel.bip</a></li>
+                          <li><a class="text">Av. Guaadalupe 742 Col.Chapalita GDL Jalisco</a></li>
+                          <li><a class="text">Telefono 33 2093 5599</a></li> 
+                        </ul>
+  </div>
+  </div>
+ </footer>                
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
